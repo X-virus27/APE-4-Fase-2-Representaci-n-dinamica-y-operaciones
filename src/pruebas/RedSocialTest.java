@@ -55,7 +55,7 @@ public class RedSocialTest {
                 Boolean.TRUE.equals(g4.existeRelacion("P02", "P01")));
         verificar("CP08: registrarPersona(P01, Ana) rechaza duplicado [R6]",
                 !g4.registrarPersona("P01", "Ana"));
-        verificar("CP09: registrarPersona(P06, "") rechaza nombre vacío [R7]",
+        verificar("CP09: registrarPersona(P06, \"\") rechaza nombre vacío [R7]",
                 !g4.registrarPersona("P06", ""));
         verificar("CP10: proponerAmistad(P01,P01) rechaza lazo [R2]",
                 !g4.proponerAmistad("P01", "P01"));
